@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  cpuIntensiveOperation(count) {
+    let val = 0;
+    for(let i =0; i < count; i++) {
+     val =  i++
+    }
+    console.log(val);
+  }
 }
